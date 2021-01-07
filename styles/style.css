@@ -13,12 +13,10 @@ body {
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
     
-    --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
+    font-family: cursive;
     color: var(--color1);
     background-color: var(--color4);
 }
@@ -27,37 +25,51 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color3);
+    width: 100%;
+    box-shadow: var(--shadow);
+    font-size: 4rem;
+}
+
 main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.group1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    flex-grow: 1;
+}
+
+.group2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .container {
-    background-color: var(--color5);
-    width: 400px;
-    height: 200px;
     display: flex;
+    background-color: var(--color5);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 2px black;
+    border: solid 2px var(--color1);
 }
 
 .button {
-    background-color: var(--color3);
+    background-color: var(--color2);
     border-radius: 5px;
     text-transform: uppercase;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
+    color: var(--color5);
 }
 
 footer {
@@ -65,19 +77,6 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
-}
-
-
-.gutter-right {
-    margin-right: 20px;
-}
-
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
-}
-
-header img {
-    height: var(--header-height);
 }
 
 footer {
@@ -91,7 +90,7 @@ footer {
     box-shadow: var(--shadow);
 }
   
-  @keyframes pulse {
+  /* @keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
@@ -108,4 +107,4 @@ footer {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 
-  }
+  } */
