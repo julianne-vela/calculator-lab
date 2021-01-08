@@ -60,6 +60,8 @@ main {
 } */
 
 .container {
+    display: grid;
+    grid: auto;
     text-align: center;
     background-color: var(--color5);
     justify-content: center;
@@ -73,7 +75,7 @@ main {
     display: grid;
     grid-area: addition;
 }
-
+/* 
 .subtraction {
     display: grid;
     grid-area: subtraction;
@@ -87,7 +89,7 @@ main {
 .division {
     display: grid;
     grid-area: division;
-}
+} */
 
 .results {
     display: grid;
@@ -104,6 +106,9 @@ main {
     border-radius: 5px;
     text-transform: uppercase;
     color: var(--color5);
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {

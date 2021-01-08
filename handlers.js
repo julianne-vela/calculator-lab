@@ -1,8 +1,8 @@
 import { getSum, getDiff, getProduct, getQuotient } from './utils.js';
 
 // -- Addition Box --
-const add1 = document.getElementById('add-input-1');
-const add2 = document.getElementById('add-input-2');
+const add1 = document.getElementById('user-input-1');
+const add2 = document.getElementById('user-input-2');
 const addResults = document.getElementById('results');
 
 export function addClickHandler() {
@@ -15,8 +15,8 @@ export function addClickHandler() {
 };
 
 // -- Subtraction Box --
-const sub1 = document.getElementById('sub-input-1');
-const sub2 = document.getElementById('sub-input-2');
+const sub1 = document.getElementById('user-input-1');
+const sub2 = document.getElementById('user-input-2');
 const subResults = document.getElementById('results');
 
 export function subClickHandler() {
@@ -29,8 +29,8 @@ export function subClickHandler() {
 }
 
 // -- Multiply Box --
-const mult1 = document.getElementById('mult-input-1');
-const mult2 = document.getElementById('mult-input-2');
+const mult1 = document.getElementById('user-input-1');
+const mult2 = document.getElementById('user-input-2');
 const multResults = document.getElementById('results');
 
 export function multClickHandler() {
@@ -43,8 +43,8 @@ export function multClickHandler() {
 };
 
 // -- Division Box --
-const div1 = document.getElementById('div-input-1');
-const div2 = document.getElementById('div-input-2');
+const div1 = document.getElementById('user-input-1');
+const div2 = document.getElementById('user-input-2');
 const divResults = document.getElementById('results');
 
 export function divClickHandler() {
