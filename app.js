@@ -1,7 +1,7 @@
 import {
     addClickHandler,
     subClickHandler,
-    multiplyClickHandler,
+    multClickHandler,
     divClickHandler
 } from './handlers.js';
 
@@ -18,7 +18,7 @@ subButton.addEventListener('click', subClickHandler);
 // -- Multiply Box --
 const multButton = document.getElementById('mult-button');
 
-multButton.addEventListener('click', multiplyClickHandler);
+multButton.addEventListener('click', multClickHandler);
 
 // -- Division Box --
 const divButton = document.getElementById('div-button');

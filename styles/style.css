@@ -40,7 +40,8 @@ main {
     display: grid;
     grid-template-areas: 
             "addition subtraction"
-            "multiplication division";
+            "multiplication division"
+            "results results";
     /* flex-direction: row; */
     justify-content: center;
     margin-top: 20px;
@@ -86,6 +87,16 @@ main {
 .division {
     display: grid;
     grid-area: division;
+}
+
+.results {
+    display: grid;
+    grid-area: results;
+    grid-row: span 2;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .button {
